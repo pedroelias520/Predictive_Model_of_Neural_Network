@@ -9,6 +9,11 @@
 # carregando o dataset MNIST
 from sklearn.datasets import fetch_openml
 import numpy as np
+import pandas as pd
+
+
+titanic_train = pd.read_csv("train.csv")
+print(titanic_train[0])
 
 X, y = fetch_openml('mnist_784', version=1, return_X_y=True)
 
