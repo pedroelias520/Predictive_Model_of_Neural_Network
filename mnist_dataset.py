@@ -13,7 +13,7 @@ import pandas as pd
 
 
 titanic_train = pd.read_csv("train.csv")
-print(titanic_train[0])
+print(titanic_train)
 
 X, y = fetch_openml('mnist_784', version=1, return_X_y=True)
 
